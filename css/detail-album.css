@@ -6,9 +6,21 @@
     margin:0;
 }
 
+
+
 h1 { 
-    text-align: center;
+    text-align:center;
+    height: 100px;
+    font-size: 70px;
 }
+h2{
+font-size: 40px;
+}
+
+h3{
+    font-size: 25px;
+}
+
 
 img{ 
     width:50%;
@@ -18,13 +30,31 @@ img{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items:baseline;
+    
 }
 
 .album{
-    width:50%;
+    width:40%;
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 50px;
 }
 
+ol li{
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
 
+ol p{ 
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+}
 
