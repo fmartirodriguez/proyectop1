@@ -4,6 +4,7 @@
     color:white;
     padding: 0;
     margin:0;
+
 }
 
 
@@ -31,6 +32,7 @@ img{
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
+  
 }
 .info {
     display: flex;
@@ -46,10 +48,11 @@ img{
     flex-direction: row;
     justify-content: space-around;
     margin: 50px;
+   
 }
 
 ol li{
-    font-size: 18px;
+    font-size: 20px;
     font-family: 'Roboto', sans-serif;
 }
 
