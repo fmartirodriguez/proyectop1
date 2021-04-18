@@ -16,6 +16,7 @@ img{
     width:50%;
 }
 
+
 .canciones{ 
     display: flex;
     flex-wrap: wrap;
@@ -50,7 +51,21 @@ a{
 h2{
     font-size: 30px;
 }
- 
-p{
+a p{
     font-size: 24px;
 }
+
+.info a:hover{
+    color: rgb(172, 170, 170);
+    text-decoration: underline;
+    
+    }
+
+.info a p:hover{
+color: rgb(172, 170, 170);
+text-decoration: underline;
+
+}
+.info a ion-icon:hover{
+    color: rgb(172, 170, 170);
+    text-decoration: underline;  }

@@ -18,11 +18,13 @@ h2{
 font-size: 40px;
 }
 
-h3{
+a h3{
     font-size: 25px;
 }
 
-
+a{
+    text-decoration: none;
+}
 img{ 
     width:50%;
 }
@@ -56,8 +58,19 @@ ol li{
     font-family: 'Roboto', sans-serif;
 }
 
-ol p{ 
+a p{ 
     font-size: 25px;
     font-family: 'Roboto', sans-serif;
 }
 
+.info a h3:hover{
+    color: rgb(172, 170, 170);
+    text-decoration: underline;
+    
+    }
+
+.info a p:hover{
+color: rgb(172, 170, 170);
+text-decoration: underline;
+
+}

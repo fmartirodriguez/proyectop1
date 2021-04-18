@@ -52,8 +52,15 @@ ol li{
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
 }
-
-ol p{ 
+a{
+    text-decoration: none;
+}
+a p{ 
     font-size: 25px;
 }
 
+.info a p:hover{
+    color: rgb(172, 170, 170);
+    text-decoration: underline;
+    
+    }
