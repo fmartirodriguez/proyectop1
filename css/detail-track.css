@@ -69,3 +69,8 @@ text-decoration: underline;
 .info a ion-icon:hover{
     color: rgb(172, 170, 170);
     text-decoration: underline;  }
+
+
+a ion-icon{
+    font-size: 40px;
+}
