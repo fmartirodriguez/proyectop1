@@ -59,7 +59,7 @@ a p{
     color: rgb(172, 170, 170);
     text-decoration: underline;
     
-    }
+}
 
 .info a p:hover{
 color: rgb(172, 170, 170);
@@ -68,7 +68,8 @@ text-decoration: underline;
 }
 .info a ion-icon:hover{
     color: rgb(172, 170, 170);
-    text-decoration: underline;  }
+    text-decoration: underline;  
+}
 
 
 a ion-icon{

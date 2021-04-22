@@ -1,10 +1,8 @@
 *{
     font-family: 'Open Sans', sans-serif;
     background-color: black;
-    padding: 0;
-    margin:0;
+    color:white;
 }
-
 
 body{
     padding: 15PX;
@@ -30,13 +28,11 @@ ul{
 
 }
 
-main{
-    padding-top: 30px;
+.info a:hover{
+    color: rgb(172, 170, 170);
+    text-decoration: underline;
+    
 }
-
-
-
-
 
 .menu li a{
     color: white;
@@ -80,9 +76,7 @@ section article img{
     justify-content: space-between
 }
 
-.boton{
-    display: inline-block;
-}
+
 
 
 
