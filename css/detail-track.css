@@ -75,3 +75,8 @@ text-decoration: underline;
 a ion-icon{
     font-size: 40px;
 }
+
+
+@media (Max-width:768px){
+    
+}
