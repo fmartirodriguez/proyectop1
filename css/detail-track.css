@@ -140,3 +140,44 @@ a ion-icon{
 .nombres a p:hover{
     color: teal;
     text-decoration: underline;}
+
+
+
+    @media (max-width:420px){
+
+
+        .canciones{ 
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: baseline;
+        }
+        
+        .info {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items:baseline;
+            justify-content: space-around;
+            margin-top: 40px; 
+            
+        }
+          
+        .cancion{
+            width:100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            margin: 50px;
+        }
+        
+        h1{
+            font-size:43px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        h2 ion-icon{
+            size: 30px;
+        }
+    }
