@@ -6,6 +6,56 @@
     margin:0;
 }
 
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+    }
+
+.logo{
+    width: 30%;
+}
+
+
+.opciones{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10%;
+}
+
+.opcion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.IB{
+    width: 20%;
+}
+
+
+.opcion a{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+}
+
+
+
+.opcion a:hover{
+    color: teal;
+    text-decoration: underline;
+}
+
+
+
+
+
+
 h1 { 
     text-align:center;
     height: 100px;
@@ -76,11 +126,6 @@ a ion-icon{
     font-size: 40px;
 }
 
-<<<<<<< HEAD
-
-@media (Max-width:768px){
-    
-=======
 .footer {
     background-color: gray;
     margin-top: 50px;
@@ -94,6 +139,4 @@ a ion-icon{
 
 .nombres a p:hover{
     color: teal;
-    text-decoration: underline;
->>>>>>> 81e45fc1634283610840623e12a067e8bcc9eab7
-}
+    text-decoration: underline;}

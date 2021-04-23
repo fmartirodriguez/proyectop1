@@ -26,59 +26,63 @@ img{
 }
 
 
-a{
-    text-decoration: none;
-}
 ul{
     list-style-type: none;
 }
 
-.logo{
-    width: 30%;
-    text-align: left;
-    flex-direction: row;
-}
+
+
+
 
 .header{
-    background-color: teal;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    
-}
+    margin-top: 30px;
+    }
 
-.header .logo {
-    background-color: teal;
-    display: flex;
-    justify-content: space-between;
-    
+.logo{
+    width: 30%;
 }
-
 
 
 .opciones{
-    width: 50%;
-    margin: auto;
-    text-align: center;
+    width: 70%;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
+    margin-top: 10%;
 }
 
-.opciones li a{
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+.opcion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50%;
 }
 
 .IB{
-    text-align: right;
-    flex-direction: row;
+    width: 20%;
 }
-.opciones li a:hover{
+
+
+.opcion a{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+}
+
+
+
+.opcion a:hover{
     color: teal;
-    background-color: white;
-    border-radius: 10px;
-    border: solid red 2px;
+    text-decoration: underline;
 }
+
+
+
+
+
 
 ul {
     width: 100%;
