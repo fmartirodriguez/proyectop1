@@ -4,6 +4,7 @@
     color:white;
     padding: 0;
     margin:0;
+<<<<<<< HEAD
 
 }
 
@@ -59,25 +60,30 @@
 
 .IB{
     text-align: right;
+=======
+>>>>>>> 9358c5bb48f30bad6bf02ba8dd15477742774e9c
 }
-
 
 h1 { 
     text-align:center;
     height: 100px;
     font-size: 70px;
 }
+
 h2{
-font-size: 40px;
+    font-size: 40px;
 }
 
 .foto{ 
-    width:50%;
-    height: 100%;
+    width:40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 50px;
 }
+
 img{ 
     width:100%;
-    height:100%;
 }
 
 .artistas{ 
@@ -87,6 +93,7 @@ img{
     justify-content: space-around;
   
 }
+
 .info {
     display: flex;
     flex-wrap: wrap;
@@ -109,22 +116,68 @@ ol li{
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
 }
-a{
+a {
     text-decoration: none;
 }
 a p{ 
     font-size: 25px;
 }
 
-.info a p:hover{
+.info h2:hover{
     color: rgb(172, 170, 170);
     text-decoration: underline;
     
 }
 
+
+
+.logo{
+    width: 200px;
+    text-align: left;
+    flex-direction: row;
+}
+
+.header{
+    background-color: teal;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    
+}
+
+.header .logo {
+    background-color: teal;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+
+.opciones{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.opciones a{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.IB{
+    text-align: right;
+    flex-direction: row;
+
+}
+
+
 .footer {
-    background-color: gray;
-    margin-top: 50px;
+    background-color: teal;
+    margin-top: 20px;
 }
 
 .nombres{
