@@ -75,3 +75,19 @@ text-decoration: underline;
 a ion-icon{
     font-size: 40px;
 }
+
+.footer {
+    background-color: gray;
+    margin-top: 50px;
+}
+
+.nombres{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.nombres a p:hover{
+    color: teal;
+    text-decoration: underline;
+}

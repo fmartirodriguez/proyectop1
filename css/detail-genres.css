@@ -14,7 +14,9 @@ h1 {
 
 }
 
-h2 {
+
+
+h2{
     font-size: 30px;
     }
     
@@ -43,6 +45,7 @@ img {
     flex-wrap: wrap;
     flex-direction: column;
     align-items:baseline;
+    margin-left: 30px;
     
 }
 
@@ -60,4 +63,18 @@ ol p{
 }
 
 
+.footer {
+    background-color: gray;
+    margin-top: 50px;
+}
 
+.nombres{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.nombres a p:hover{
+    color: teal;
+    text-decoration: underline;
+}
