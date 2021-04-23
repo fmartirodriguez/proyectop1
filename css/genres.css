@@ -53,13 +53,54 @@ img{
     margin: 50px;
 }
 
-.IB{
-    text-align: right;
+
+
+.logo{
+    width: 200px;
+    text-align: left;
+    flex-direction: row;
+}
+
+.header{
+    background-color: teal;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    
+}
+
+.header .logo {
+    background-color: teal;
+    display: flex;
+    justify-content: space-between;
+    
 }
 
 
+
+.opciones{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.opciones a{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.IB {
+    text-align: right;
+    flex-direction: row;
+}
+
+
+
 .footer {
-    background-color: gray;
+    background-color: teal;
     margin-top: 50px;
 }
 
