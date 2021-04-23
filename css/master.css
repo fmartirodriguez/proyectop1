@@ -1,11 +1,11 @@
 *{
     font-family: 'Open Sans', sans-serif;
     background-color: black;
-    color:white;
+    color: white;
 }
 
 body{
-    padding: 15PX;
+    padding: 15px;
     background-color: black;
 }
 
@@ -17,14 +17,75 @@ a{
 
 h2{
     padding-bottom: 15px;
-    font-size: 30px;
+    font-size: 50px;
 
 }
  
+img{
+    width: 100%;
+}
 
+
+a{
+    text-decoration: none;
+}
 ul{
+    list-style-type: none;
+}
+
+.logo{
+    width: 30%;
+    text-align: left;
+    flex-direction: row;
+}
+
+.header{
+    background-color: teal;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.header .logo {
+    background-color: teal;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+
+.opciones{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.opciones li a{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.IB{
+    text-align: right;
+    flex-direction: row;
+}
+.opciones li a:hover{
+    color: teal;
+    background-color: white;
+    border-radius: 10px;
+    border: solid red 2px;
+}
+
+ul {
     width: 100%;
     list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 
 }
 
@@ -34,19 +95,11 @@ ul{
     
 }
 
-.menu li a{
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-}
-
 
 .padres{
- 
     display: flex;
     flex-direction: row;
     text-align: center;
- 
 }
 
 .padres h2{
@@ -64,19 +117,18 @@ section article img{
     width: 90%;
 }
 
-
-
-.IB{
-    text-align: right;
+.footer {
+    background-color: gray;
+    margin-top: 70px;
 }
 
-.navBar{
+.nombres{
+    width: 50%;
+    margin: auto;
     text-align: center;
-    display: flex;
-    justify-content: space-between
 }
 
-
-
-
-
+.nombres a p:hover{
+    color: teal;
+    text-decoration: underline;
+}

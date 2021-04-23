@@ -53,10 +53,60 @@ h2 {
     text-align: right;
 }
 
-.exitos ol{
+
+.logo{
+    width: 30%;
+    text-align: left;
+    flex-direction: row;
+}
+
+.encabezado{
+    background-color: teal;
+    
+}
+
+.opciones{
+    width: 50%;
+    margin: auto;
     text-align: center;
+}
+.opciones li a{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.IB{
+    text-align: right;
+    flex-direction: row;
+}
+.opciones li a:hover{
+    color: teal;
+    background-color: white;
+    border-radius: 10px;
+    border: solid red 2px;
 }
 
 
+.info a h3:hover{
+    color: rgb(172, 170, 170);
+    text-decoration: underline;
+    
+}
 
 
+.footer {
+    background-color: gray;
+    margin-top: 50px;
+}
+
+.nombres{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.nombres a p:hover{
+    color: teal;
+    text-decoration: underline;
+}

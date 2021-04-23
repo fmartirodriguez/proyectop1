@@ -16,31 +16,29 @@
     <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
-    <header class="encabezado"> 
-        <section class="navBar"></section>
+    <main>
+        <header class="header">
             <figure class="logo">
-                <img src="img/Korts.logo.png" alt="Logo de Korts">
+                <img src="img/Korts.logo.png" alt="Logo">
+            </figure>
+            <nav class="opciones">
+                <div class="opcion">
+                    <a href="index.html">Home</a>
+                    <a href="detail-playlist.html">Playlist</a>
+                    <a href="detail-album.html">Albums</a>
+                    <a href="genres.html">Genres</a>
+                </div>
                 <div class="IB">
                     <form action="search.html">
-                        <input type="text" name= "buscar">
-                        <button class= "boton" type="submit">
+                        <input type="text" name="buscar">
+                        <button class="boton" type="submit">
                             <h2><ion-icon name="search-outline"></ion-icon></h2>
                         </button>
                     </form>
                 </div>
-            </figure>
-            <article>      
-                <nav class="menu">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="playlist.html">Playlist</a></li>
-                        <li><a href="detail-album.html">Albums</a></li>
-                        <li><a href="genres.html">Genres</a></li>
-                    </ul>
-                </nav>
-            </article>
-        </section>
-    </header>
+            </nav>
+        </header>
+    </main>
     
     <main>
 
@@ -54,7 +52,7 @@
             <article class="artista">
                 <img src="img/the Weeknd.jpeg" alt="The Weeknd">
             <div class="info">
-                <h3>THE WEEKND</h3>
+                <a href="detail-artist.html"><h3>THE WEEKND</h3></a>
                 <h4>66.99 millones de reproducciones</h4>
                 <ol class="exitos"><p>Exitos</p>
                     <li>Blinding Lights</li>
@@ -68,13 +66,13 @@
             <article class="artista">
                 <img src="img/justin bieber.jpeg" alt="Justin Bieber">
             <div class="info">
-                <h3>THE WEEKND</h3>
-                <h4>66.99 millones de reproducciones</h4>
+                <a href="detail-artist.html"><h3>JUSTIN BIEBER</h3></a>
+                <h4>66.14 millones de reproducciones</h4>
                 <ol class="exitos"><p>Exitos</p>
-                    <li>Blinding Lights</li>
-                    <li>Save Your Tears</li>
-                    <li> I Feel It Coming</li>
-                    <li> Call Out My Name</li>
+                    <li>Yummy</li>
+                    <li>Peaches</li>
+                    <li>Baby</li>
+                    <li>Lonely</li>
                 </ol>
             </div>
             </article>
@@ -82,7 +80,7 @@
             <article class="artista">
                 <img src="img/ariana g.jpeg" alt="Ariana Grande">
             <div class="info">
-                <h3>ARIANA GRANDE</h3>
+                <a href="detail-artist.html"><h3>ARIANA GRANDE</h3></a>
                 <h4>62.49 millones de reproducciones</h4>
                 <ol class="exitos"><p>Exitos</p>
                     <li>7 rings</li>
@@ -96,7 +94,7 @@
             <article class="artista">
                 <img src="img/DUA LIPA.jpeg" alt="Dua Lipa">
             <div class="info">
-                <h3>DUA LIPA</h3>
+                <a href="detail-artist.html"><h3>DUA LIPA</h3></a>
                 <h4>62.05 millones de reproducciones</h4>
                 <ol class="exitos"><p>Exitos</p>
                     <li>Levitating</li>
@@ -109,6 +107,13 @@
 
 
         </section>
+        <footer class="footer">
+            <ul class="nombres">
+                <a href="mailto:lbiscay@udesa.edu.ar"><p>Lola Biscay</p></a>
+                <a href="mailto:fmartirodriguez@udesa.edu.ar"><p>Francisco Marti</p></a>
+                <a href="mailto:idoldandominguez@udesa.edu.ar"><p>Ignacia Doldan</p></a>
+            </ul>
+        </footer>
     </main>
 </body>
 </html>
