@@ -1,9 +1,32 @@
-let info = document.querySelector('.info')
+/* <main class="container">
+        <h2 class="disco"></h2>
+        <h2 class="artista"></h2>
+        <p class="genero"></p>
+        <p class="fecha"></p>
+        <ul class="listado"></ul>
+        <div class="imagen"></div>
+    </main> */
 
-fetch (`https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/302127`)
-.then(respuesta=>{ 
-    return respuesta.json()})
+let disco = document.querySelector ('.disco')
+let artista = document.querySelector ('.artista')
+let genero = document.querySelector ('.genero')
+let fecha = document.querySelector ('.fecha')
+let listado = document.querySelector ('.listado')
+let imagen = document.querySelector ('.imagen')
+
+let objetoId = new URLSearchParams (location.search); 
+let id = objetoId.get('id'); 
+
+fetch (`https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/${id}`)
+.then(respuesta=>{return respuesta.json()})
 .then(album=>{
-    for(let i=0; i<album.data.lenght; i++){
-        info.innerHTML += `<li> ${album.data[i].title} </li>`
-    }})
+    disco.innerHTML = `${album.title}`
+    artista.innerHTML = `${album.artist.name}`
+    genero.innerHTML = `${album.genres.data[0].name}`
+    fecha.innerHTML = `${album.release_date}`
+    for (let i=0; i<album.tracks.data.length; i++){
+        listado.innerHTML =+ `<li> ${album.tracks.data[i].title} </li>`
+     }
+    imagen.innerHTML =`<img src= "${album.cover_big}"> `
+}) 
+.catch(function(error){console.log(error);})
