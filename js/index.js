@@ -23,10 +23,16 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/")
 )
 .catch(function(error){console.log(error);})
 
-/* BUSCADOR */
 
+
+
+
+
+
+/* BUSCADOR */
 let form = document.querySelector('form')
 let buscar = document.querySelector('[name=buscar]')
+
 
 form.addEventListener('submit', function(e){
     e.preventDefault()

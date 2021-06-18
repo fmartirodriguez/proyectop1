@@ -1,18 +1,16 @@
-let busqueda = new URLSearchParams(location.search)
-let buscar = busqueda.get('buscar')
-
+let busqueda = new URLSearchParams(location.search) /* CAPTURO New URLSearchParams me trae los datos de mejor manera - con location.search mandando a buscar lo que typeo el usuario- Aca tengo lo que el usuario typeo */
+let buscar = busqueda.get('buscar') /* OBTENGO EL DATO Extraigo lo que el usuario typeo*/
+let listadoBusqueda = document.querySelector('.listadoBusqueda')
 
 fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=${buscar}`)
 .then(respuesta =>{
-    return respuesta.json()
+   return respuesta.json()
 })
-.then(dataBuscar =>{
-    console.log(dataBuscar);
-    for(let i = 0; i < dataBuscar.provincias.length; i++){
-        select.innerHTML += `<option value="${dataProvincias.provincias[i].id }">  ${dataProvincias.provincias[i].nombre} </option>` 
-    }
+.then(data =>{
+   console.log(data);
+   
+ 
 })
 .catch(error =>{
-    console.log(`${error}`);
+   console.log(error);
 })
-
