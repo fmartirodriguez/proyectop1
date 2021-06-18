@@ -19,17 +19,19 @@ let playlist = document.querySelector(".playlist")
 let objetoId = new URLSearchParams (location.search); 
 let id = objetoId.get('id'); 
 
-fetch(`https://cors-anywhere.herokuapp.com/https://developers.deezer.com/api/track${id}`)
+console.log(id)
+
+fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${id}`)
 .then(respuesta => {
     return respuesta.json()
 })
 .then(track => {
-   foto.innerHTML += `<img src="${track.album.cover}">`
-   cancion.innerHTML += `${track.title}`
-   artista.innerHTML += `${track.artist.name}`
-   disco.innerHTML += `${track.album.title}`
-   player.innerHTML += `<iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/track/${track.id}" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>}`
-   
+    console.log(track)
+    foto.innerHTML += `<img src="${track.album.cover_xl}">`
+    cancion.innerHTML += `${track.title}`
+    artista.innerHTML += `${track.artist.name}`
+    disco.innerHTML += `${track.album.title}`
+    player.innerHTML += `<iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/track/${track.id}" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>`
 })
 .catch(function(error){
     console.log(error)
