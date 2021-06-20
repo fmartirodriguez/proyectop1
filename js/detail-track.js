@@ -36,3 +36,10 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${id}`)
 .catch(function(error){
     console.log(error)
 })
+
+
+/* TODO LO DEL CSS */
+foto.classList.add('CSSfoto')
+artista.classList.add('CSSartista')
+disco.classList.add('CSSdisco')
+cancion.classList.add('CSScancion')

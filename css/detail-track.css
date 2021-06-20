@@ -217,3 +217,32 @@ a ion-icon{
             text-align: left;
         }
     }
+
+
+/* Todo lo de css del FINAL*/
+
+.CSSfoto{
+    margin-left: 30%;
+    width: 70%;
+}
+
+.CSScancion{
+    font-family:'Roboto', sans-serif;
+    font-size: 40px;
+    margin-left: 37%;
+    color: rgb(202, 192, 184);
+}
+.CSSartista{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+.CSSdisco{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px
+}

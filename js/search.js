@@ -5,6 +5,9 @@ let contenido = ''
 let titulo = document.querySelector('.titulo')
 
 titulo.innerHTML += buscar
+titulo.classList.add('tituloBusqueda')
+
+
 
 
 fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=${buscar}`)
@@ -14,10 +17,9 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=${bus
 .then(dataBusqueda =>{ /*en dataBusqueda estan los datos*/
    console.log(dataBusqueda);
    for(let i=0; i < dataBusqueda.data.length; i++){
-       contenido += `<article class="">
-                        <p class="nombre"><a href="detail-track.html?id=${dataBusqueda.data[i].id}"> ${dataBusqueda.data[i].title} </a></p>
+       contenido += `<article class="contenido2">
+                        <p class="titulosCanciones"><a href="detail-track.html?id=${dataBusqueda.data[i].id}"> ${dataBusqueda.data[i].title} </a></p>
                     </article>`
-
    }
    resultados.innerHTML += contenido
    if(dataBusqueda.data.length == 0){

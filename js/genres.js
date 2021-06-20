@@ -11,3 +11,4 @@ fetch (`https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/0`)
         lista.innerHTML+= `<a href="detalleGenero.html?id=${genero.data[i].id}"> <li> ${genero.data[i].name} </li> </a>`
     }
 })
+
