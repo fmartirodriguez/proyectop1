@@ -124,3 +124,14 @@ img{
     color: teal;
     text-decoration: underline;
 }
+
+
+/* PARTE 2 - FINAL */
+
+.contenido2{
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}

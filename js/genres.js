@@ -1,14 +1,21 @@
-let lista = document.querySelector (".lista")
+let generos = document.querySelector (".generos")
 
-fetch (`https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/0`)
+fetch (`https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre`)
 .then(respuesta => {
-    return respuesta.json()
+   return respuesta.json()
 })
 .then(dataGenero => {
-    console.log(dataGenero)
+   console.log(dataGenero)
     for(let i = 0 ; i < dataGenero.data.length; i++){
        
-        lista.innerHTML+= `<a href="detalleGenero.html?id=${genero.data[i].id}"> <li> ${genero.data[i].name} </li> </a>`
+        generos.innerHTML += `<article class="contenido2">
+                                <p class="titulosCanciones"><a href="detail-genres.html?id=${dataGenero.data[i].id}"> <li> ${dataGenero.data[i].name} </li> </a></p>
+                            </article>`
+
     }
 })
+.catch(error =>{
+  console.log(error);
+ })
 
+ 
