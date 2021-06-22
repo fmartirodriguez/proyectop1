@@ -8,6 +8,10 @@
 let imagen = document.querySelector (".imagen")
 let listado = document.querySelector (".listado")
 let artista = document.querySelector (".artista")
+artista.classList.add('CSSartist')
+listado.classList.add('CSSextra')
+imagen.classList.add('CSSfoto')
+
 
 let objetoId = new URLSearchParams (location.search); 
 let id = objetoId.get('id'); 

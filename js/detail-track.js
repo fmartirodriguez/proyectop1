@@ -43,3 +43,36 @@ foto.classList.add('CSSfoto')
 artista.classList.add('CSSartista')
 disco.classList.add('CSSdisco')
 cancion.classList.add('CSScancion')
+playlist.classList.add('CSSdisco')
+miPlaylist.classList.add('CSSplay')
+
+
+// Agregar cancion a favoritos
+let agregarSacar = document.querySelector('.miPlaylist')
+let cancionesFavoritas = []
+
+let traerCancionesFavoritas  = localStorage.getItem('favoritas')
+
+if (traerCancionesFavoritas != null){
+   cancionesFavoritas = JSON.parse(traerCancionesFavoritas)
+}
+
+if(cancionesFavoritas.includes(id)){
+  agregarSacar.innerHTML =  'Eliminar de mi playlist'
+}
+
+agregarSacar.addEventListener('click',function(e){
+   e. preventDefault()
+
+      if(cancionesFavoritas.includes(id)){
+let cancionesFavPosicion = cancionesFavoritas. indexOf(id);
+cancionesFavoritas.splice(cancionesFavPosicion,1);
+agregarSacar.innerHTML = 'Agregar a mi playlist'
+} else {
+     cancionesFavoritas.push(id)
+     agregarSacar.innerHTML = 'Eliminar de mi playlist'
+}
+
+let cancionFavString = JSON.stringify(cancionesFavoritas)
+localStorage.setItem('favoritas', cancionFavString)
+console.log(localStorage);})

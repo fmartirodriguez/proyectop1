@@ -6,7 +6,8 @@
     margin:0;
 
 }
-
+h1
+ {background-color: teal;}
 
 
 .header{
@@ -117,7 +118,7 @@ a p{
 .info a h3:hover{
     color: rgb(172, 170, 170);
     text-decoration: underline;
-    
+
     }
 
 .info a p:hover{
@@ -227,3 +228,41 @@ h2 ion-icon{
 }
 }
 
+
+/* CSS ara JS*/
+
+.CSSfoto{
+    margin-left: 30%;
+    width: 70%;
+}
+
+.CSSalbum{
+    font-family:'Roboto', sans-serif;
+    font-size: 60px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: rgb(202, 192, 184);
+}
+
+.CSSextra{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+
+.CSSdata{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+}
+
+a :hover {
+    background-color:teal ;
+    color: rgb(172, 170, 170);
+        text-decoration: underline;
+    }

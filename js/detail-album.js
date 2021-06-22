@@ -14,6 +14,14 @@ let fecha = document.querySelector ('.fecha')
 let listado = document.querySelector ('.listado')
 let imagen = document.querySelector ('.imagen')
 
+disco.classList.add('CSSalbum')
+imagen.classList.add('CSSfoto')
+artista.classList.add('CSSextra')
+genero.classList.add('CSSextra')
+fecha.classList.add('CSSdata')
+listado.classList.add('CSSdata')
+
+
 let objetoId = new URLSearchParams (location.search); 
 let id = objetoId.get('id'); 
 

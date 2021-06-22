@@ -1,7 +1,97 @@
 *{
     font-family: 'Open Sans', sans-serif;
     background-color: black;
+    color:white;
+    padding: 0;
+    margin:0;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+    }
+
+.logo{
+    width: 30%;
+}
+
+
+.opciones{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10%;
+}
+
+.opcion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.IB{
+    width: 20%;
+}
+
+
+.opcion a{
     color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+}
+
+
+
+.opcion a:hover{
+    color: teal;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.info h2 {
+    font-size: 50px;
+    background-color: teal;
+
+}
+.info{
+    background-color: teal;
+}
+
+.canciones{ 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.albums{ 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.artistas{ 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+  
 }
 
 body{
@@ -59,6 +149,15 @@ ul{
     
 }
 
+.foto{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+
+
 
 .padres{
     display: flex;
@@ -98,20 +197,3 @@ section article img{
 }
 
 
-
-@media(min-width: 768px){
-    .logo{
-        width: 10%;
-    }
-    .opciones{
-        width: 90%;
-        display: flex;
-        align-items: center;
-    }
-    .header{
-        display: flex;
-    }
-    .opcion{
-        display: flex;
-        justify-content: space-around;
-    }

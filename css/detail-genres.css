@@ -6,7 +6,9 @@
     margin:0;
 
 }
-
+h1
+ {background-color: teal;}
+ 
 .header{
     display: flex;
     flex-direction: row;
