@@ -241,3 +241,16 @@ a :hover {
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
     }
+
+.disco :hover {
+        background-color:teal ;
+        color: rgb(172, 170, 170);
+            text-decoration: underline;
+        }
+
+.artista a:hover{
+    background-color:teal ;
+    color: rgb(172, 170, 170);
+        text-decoration: underline;
+}
+

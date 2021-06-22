@@ -142,7 +142,7 @@ a p{
 
 .CSSfoto{
     margin-left: 40%;
-    width: 30%;
+    width: 20%;
 }
 
 .CSSartist{
@@ -256,6 +256,20 @@ a :hover {
         }
 
         
-     
-
+    
   }
+
+  .listado{
+    font-family:'Roboto', sans-serif;
+    font-size: 30px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: rgb(202, 192, 184);
+}
+.listado a:hover{
+    background-color:teal ;
+    color: rgb(172, 170, 170);
+        text-decoration: underline;
+}

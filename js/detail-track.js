@@ -29,8 +29,8 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${id}`)
     console.log(track)
     foto.innerHTML += `<img src="${track.album.cover_xl}">`
     cancion.innerHTML += `${track.title}`
-    artista.innerHTML += `${track.artist.name}`
-    disco.innerHTML += `${track.album.title}`
+    artista.innerHTML += `<a href="detail-artist.html?id= ${track.artist.id}"> ${track.artist.name}</a>`
+    disco.innerHTML += `<a href="detail-album.html?id= ${track.album.id}">${track.album.title} </a>`
     player.innerHTML += `<iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/track/${track.id}" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>`
 })
 .catch(function(error){

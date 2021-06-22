@@ -28,3 +28,17 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${id}`)
     console.log(error)
 })
 
+fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${id}/albums`)
+.then(respuesta => {
+    return respuesta.json()
+})
+.then(topAlbums => {
+    console.log(topAlbums.data)
+    for (let i=0; i<5; i++){
+        listado.innerHTML += `<li> <a href="detail-album.html?id=${topAlbums.data[i].id}"> ${topAlbums.data[i].title}</a>  </li>`
+    } 
+})
+.catch(function(error){
+    console.log(error)
+})
+

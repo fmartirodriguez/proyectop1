@@ -22,8 +22,7 @@ fetch (`https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/${id}`)
 
        
    }
-
-})
+)
 .catch(error =>{
     console.log(error);
  })
