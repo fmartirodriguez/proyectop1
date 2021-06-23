@@ -8,10 +8,7 @@ fetch (`https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre`)
    console.log(dataGenero)
     for(let i = 0 ; i < dataGenero.data.length; i++){
        
-        generos.innerHTML += `<article class="contenido2">
-                                <p class="titulosCanciones"><a href="detail-genres.html?id=${dataGenero.data[i].id}"> <li> ${dataGenero.data[i].name} </li> </a></p>
-                            </article>`
-
+        generos.innerHTML += `<nav class="generoIndividual"><nav><a href"detail-genres.html?id=${dataGenero.data[i].id}"><img class="img" src="${dataGenero.data[i].picture_big}" alt="${dataGenero.data[i].name}"</a></nav><h3><a href="detail-genres.html?id=${dataGenero.data[i].id}" class="tituloGenero"> ${dataGenero.data[i].name} </a></h3></nav>`
     }
 })
 .catch(error =>{

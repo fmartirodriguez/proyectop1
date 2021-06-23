@@ -30,13 +30,3 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=${bus
 })
 
 
-/* me dice que contenido.addEventListener no es una funcion*/
-contenido.addEventListener('mouseover', function(){
-   titulosCanciones.style.color = 'teal';
-})
-
-
-
-
-
-/* Como se si el array esta vacio? por q el lenght me da 0 */

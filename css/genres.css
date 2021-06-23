@@ -52,14 +52,6 @@
     text-decoration: underline;
 }
 
-
-
-
-
-
-
-
-
 h1 { 
     text-align:center;
     height: 100px;
@@ -128,10 +120,49 @@ img{
 
 /* PARTE 2 - FINAL */
 
-.contenido2{
-    font-size: 30px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+.img{
+    width: 300px;
+}
+
+.generos{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap; /**/
+    justify-content: space-around;
+    margin-left: 150px ;
+    margin-right: 150px ;
+}
+
+h1{
+    margin-bottom: 50px;
+}
+
+
+
+h3{
+    margin: 20px;
     text-align: center;
 }
+
+.tituloGenero{
+    font-family:'Roboto', sans-serif;
+    font-size: 30px;
+
+}
+
+.tituloGenero a:hover{
+    color: teal;
+    text-decoration: underline;
+}
+
+
+h1{
+    background-color:teal ;
+    color:white;
+}
+
+
+.generoIndividual :hover {
+    background-color: teal;
+    color: rgb(172, 170, 170);
+        text-decoration: underline;
+    }

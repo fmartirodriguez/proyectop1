@@ -217,7 +217,6 @@ h2 {
 
 .contenido2{
     font-size: 30px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -236,6 +235,14 @@ h2 {
     margin-left: 38%;
 }
 
-.color{
-    color: teal;
+.titulosCanciones{
+    margin-bottom: 20px;
 }
+
+.titulosCanciones a:hover{
+    color: teal;
+    text-decoration: underline;
+}
+
+
+

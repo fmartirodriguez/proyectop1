@@ -6,9 +6,7 @@
     margin:0;
 
 }
-h1
- {background-color: teal;}
- 
+
 .header{
     display: flex;
     flex-direction: row;
@@ -210,3 +208,36 @@ ol p{
         text-align: left;
     }
     }
+
+    /* PARTE 2 - FINAL */
+
+
+h1{
+    margin-bottom: 50px;
+}    
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.img1{
+    width: 300px;
+}
+.artistas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.artista1{
+    list-style-type: none;
+
+}
+.todo{
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+}
+p{
+    margin-top: 20px;
+}
