@@ -16,6 +16,15 @@ let player = document.querySelector(".player")
 let miPlaylist = document.querySelector(".miPlaylist")
 let playlist = document.querySelector(".playlist")
 
+/* TODO LO DEL CSS */
+foto.classList.add('CSSfoto')
+artista.classList.add('CSSartista')
+disco.classList.add('CSSdisco')
+cancion.classList.add('CSScancion')
+playlist.classList.add('CSSdisco')
+miPlaylist.classList.add('CSSplay')
+
+
 let objetoId = new URLSearchParams (location.search); 
 let id = objetoId.get('id'); 
 
@@ -38,13 +47,7 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${id}`)
 })
 
 
-/* TODO LO DEL CSS */
-foto.classList.add('CSSfoto')
-artista.classList.add('CSSartista')
-disco.classList.add('CSSdisco')
-cancion.classList.add('CSScancion')
-playlist.classList.add('CSSdisco')
-miPlaylist.classList.add('CSSplay')
+
 
 
 // Agregar cancion a favoritos
