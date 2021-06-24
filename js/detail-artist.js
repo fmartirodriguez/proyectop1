@@ -1,8 +1,8 @@
-/* <main class="container">
+/* HTML
     <h2 class="artista"></h2>
     <ul class="listado"></ul>
     <div class="imagen"></div>
-</main>  */
+ */
 
 
 let imagen = document.querySelector (".imagen")

@@ -1,12 +1,12 @@
-/* <main class="container">
-<div class="foto"></div>
-<h2 class="cancion"></h2>
-<h2 class="artista"></h2>
-<p class="disco"></p>
-<div class="player"><ion-icon name="musical-note-outline"></ion-icon></div>
-<div class="miPlaylist"><ion-icon name="musical-note-outline"></ion-icon></div>
-<p class="playlist"></p>
-</main>  */
+/* HTML
+    <div class="foto"></div>
+    <h2 class="cancion"></h2>
+    <h2 class="artista"> </h2>
+    <p class="disco"></p>
+    <div class="player"></div>
+    <div class="miPlaylist"> Agregar la cancion a mi Playlist </div>
+    <a href="playlist.html"class="playlist">Ir a mi playlist</a>
+     */
 
 let foto = document.querySelector(".foto")
 let cancion = document.querySelector(".cancion")

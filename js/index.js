@@ -12,13 +12,13 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/")
     let artista = document.querySelector(".artistas")
 
     for(let i=0; i<6; i++){
-        cancion.innerHTML += `<nav class="cancion"><nav class="carta"><img class="imgl" src="`+ topCanciones[i].album.cover_big + `"alt ="`+ topCanciones[i].title +`"></nav> <h3><a href="detail-track.html?id=`+ topCanciones[i].id+`">`+topCanciones[i].title + `</a></h3><p>Cancion que pertenece al album <a href ="detail-album.html?id=`+ topCanciones[i].album.id+`"> <b> `+ topCanciones[i].album.title + `</b> </a> de <a href="detail-artist.html?id=`+topCanciones[i].artist.id+`"> <b> `+ topCanciones[i].artist.name + `</b> </a> </p> </nav>`}
+        cancion.innerHTML += `<nav class="cancion"><nav class="carta"><img class="imgl" src=" ${topCanciones[i].album.cover_big}  "alt =" ${topCanciones[i].title} "></nav> <h3><a href="detail-track.html?id= ${topCanciones[i].id}">${topCanciones[i].title} </a></h3><p>Cancion que pertenece al album <a href ="detail-album.html?id=${topCanciones[i].album.id}"> <b> ${topCanciones[i].album.title}</b> </a> de <a href="detail-artist.html?id=${topCanciones[i].artist.id}"> <b> ${topCanciones[i].artist.name}</b> </a> </p> </nav>`}
 
     for(let i=0; i<6; i++){
-        album.innerHTML += `<nav class="album"><nav class="carta"><a href="detail-album.html?id=`+topAlbums[i].id+`"><img class="imgl" src="`+ topAlbums[i].cover_big + `"alt ="`+ topAlbums[i].title +` by`+ topAlbums[i].artist.name + `"> </a> </nav> <h3> <a href="detail-album.html?id=`+ topAlbums[i].id+`">`+topAlbums[i].title +`</a> </h3> </p> Album lanzado por <a href="detail-artist.html?id=`+topAlbums[i].artist.id + `"><b>`+ topAlbums[i].artist.name + `</b> </a> </p> </nav>`}
+        album.innerHTML += `<nav class="album"><nav class="carta"><a href="detail-album.html?id=${topAlbums[i].id}"><img class="imgl" src="${topAlbums[i].cover_big} "alt =" ${topAlbums[i].title} by ${topAlbums[i].artist.name} "> </a> </nav> <h3> <a href="detail-album.html?id=${topAlbums[i].id}">${topAlbums[i].title} </a> </h3> </p> Album lanzado por <a href="detail-artist.html?id=${topAlbums[i].artist.id} "><b>${topAlbums[i].artist.name} </b> </a> </p> </nav>`}
 
     for(let i=0; i<6; i++){
-        artista.innerHTML += `<nav class="artista"><nav class="carta"><a href="detail-artist.html?id=`+topArtistas[i].id+`"><img class="imgl" src="`+ topArtistas[i].picture_big + `"alt ="`+ topArtistas[i].name +`"> </a> </nav> <h3> <a href="detail-artist.html?id=`+ topArtistas[i].id + `">`+ topArtistas[i].name + `</a> </h3> </nav> </nav>`}
+        artista.innerHTML += `<nav class="artista"><nav class="carta"><a href="detail-artist.html?id=${topArtistas[i].id}"><img class="imgl" src="${topArtistas[i].picture_big} "alt ="${topArtistas[i].name}"> </a> </nav> <h3> <a href="detail-artist.html?id=${topArtistas[i].id}"> ${topArtistas[i].name} </a> </h3> </nav> </nav>`}
 }
 )
 .catch(function(error){console.log(error);})

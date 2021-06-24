@@ -1,11 +1,11 @@
-/* <main class="container">
+/* HTML
         <h2 class="disco"></h2>
         <h2 class="artista"></h2>
         <p class="genero"></p>
         <p class="fecha"></p>
         <ul class="listado"></ul>
         <div class="imagen"></div>
-    </main> */
+   */
 
 let disco = document.querySelector ('.disco')
 let artista = document.querySelector ('.artista')
@@ -50,6 +50,3 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/${id}/tr
 .catch(function(error){
     console.log(error)
 })
-
-
-{/*  */}
