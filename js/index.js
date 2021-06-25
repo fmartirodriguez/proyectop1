@@ -1,3 +1,19 @@
+{/* HTML
+    <article class="info">
+<nav class="titulo"> <h2> Top Canciones </h2> </nav>
+<nav class="canciones"></nav>
+</article>
+
+<article class="info">
+<nav class="titulo"> <h2> Top Albums </h2> </nav>
+<nav class="albums"></nav>
+</article>
+
+<article class="info">
+<nav class="titulo"> <h2> Top Artistas </h2> </nav>
+<nav class="artistas"></nav>
+</article> */}
+
 fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/")
 .then(function(response)
 {return response.json();})
