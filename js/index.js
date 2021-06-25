@@ -15,8 +15,9 @@
 </article> */}
 
 fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/")
-.then(function(response)
-{return response.json();})
+.then(respuesta => {
+    return respuesta.json()
+})
 .then(function(data){
     console.log(data);
     let topCanciones = data.tracks.data

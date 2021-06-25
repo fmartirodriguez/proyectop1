@@ -26,7 +26,9 @@ let objetoId = new URLSearchParams (location.search);
 let id = objetoId.get('id'); 
 
 fetch (`https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/${id}`)
-.then(respuesta=>{return respuesta.json()})
+.then(respuesta => {
+    return respuesta.json()
+})
 .then(album=>{
     disco.innerHTML = `${album.title}`
     artista.innerHTML = `<a href="detail-artist.html?id= ${album.artist.id}"> ${album.artist.name}</a>`
